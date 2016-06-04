@@ -16,18 +16,18 @@
 
 <!--header-->
       <div class="page-header">
-        <h1>This is a Quote Book application</h1>
+        <h1>This is a simple AngularJS Quote Book application</h1>
       </div>
 
       <!-- Quote Form -->
-     <form>
+     <form ng-submit="createQuote()">
          <div class="form-group">
              <label>Quote</label>
-             <input type="text" class="form-control" required>
+             <input type="text" class="form-control" ng-model="text" required>
          </div>
          <div class="form-group">
              <label>Author</label>
-             <input type="text" class="form-control" required>
+             <input type="text" class="form-control" ng-model="author" required>
          </div>
          <input type="submit" class="btn btn-warning btn-lg" value="Add Quote">
      </form>
